@@ -1,0 +1,18 @@
+{
+  "url": "http://www.sgsits.ac.in/files/IPR_Policy_FrameworkGuide",
+  "scraped_at": "2026-02-24T04:59:00.258227Z",
+  "page_info": {},
+  "content": {},
+  "links": [],
+  "buttons": [],
+  "forms": [],
+  "scripts": [],
+  "apis_observed": [],
+  "dynamic_indicators": {},
+  "media": {},
+  "structure": [],
+  "raw_meta_tags": [],
+  "errors": [
+    "static_fetch: 404 Client Error: Not Found for url: https://www.sgsits.ac.in/files/IPR_Policy_FrameworkGuide"
+  ]
+}

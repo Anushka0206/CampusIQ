@@ -1,0 +1,41 @@
+{
+  "url": "https://www.sgsits.ac.in/files/downloads/",
+  "scraped_at": "2026-02-24T05:46:17.954723Z",
+  "page_info": {
+    "title": "",
+    "meta_description": "",
+    "language": "",
+    "charset": ""
+  },
+  "content": {
+    "main_text_preview": "",
+    "main_text_length": 0,
+    "headings": [],
+    "source_type": "html"
+  },
+  "links": [],
+  "buttons": [],
+  "forms": [],
+  "scripts": [],
+  "apis_observed": [],
+  "dynamic_indicators": {
+    "has_inline_scripts": false,
+    "inline_script_count": 0,
+    "external_script_count": 0,
+    "has_react_like": false,
+    "has_vue_like": false,
+    "has_angular_like": false,
+    "has_jquery_like": false,
+    "has_ajax_fetch_indicators": false,
+    "data_attributes_used": false,
+    "data_attribute_elements": 0,
+    "likely_dynamic": false
+  },
+  "media": {
+    "images": [],
+    "iframes": []
+  },
+  "structure": [],
+  "raw_meta_tags": [],
+  "errors": []
+}
