@@ -1,0 +1,13 @@
+# Scraping & parsing
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# PDF text extraction (for QA bot training from notices, circulars, etc.)
+PyMuPDF>=1.24.0
+
+# Dynamic pages & network capture
+playwright>=1.40.0
+
+# Output
+python-dotenv>=1.0.0

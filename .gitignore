@@ -1,0 +1,52 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Scraped data (large; re-crawl or fetch separately)
+scraped_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Playwright
+playwright-report/
+test-results/
+.playwright/
+
+# Logs and temp
+*.log
+*.tmp
+.cache/
