@@ -3,9 +3,6 @@ venv/
 .venv/
 env/
 
-# Scraped data: uncomment to ignore (e.g. if too large); keep to push JSONs
-# scraped_data/
-
 # Python
 __pycache__/
 *.py[cod]
