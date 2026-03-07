@@ -2,6 +2,39 @@
 
 Scrapes [SGSITS](https://www.sgsits.ac.in/) to collect page info, structure, buttons, forms, APIs, and dynamic vs static metadata for training a question-answer bot.
 
+---
+
+## For beginners: what’s in this repo?
+
+This repo helps you **gather content from the SGSITS website** so you can build a bot that answers questions about the institute. Everything is saved in **JSON files** (structured text data that programs can read easily).
+
+### What each script does
+
+- **`scrape_sgsits.py`**  
+  This is the main tool. It **visits SGSITS web pages** and saves what it finds (text, links, buttons, forms, etc.) into JSON files.  
+  - Run it for **one page** (e.g. the homepage) → you get a single JSON file with that page’s data.  
+  - Run it in **crawl mode** → it follows links and saves **one JSON file per page** (like taking a snapshot of many pages at once).  
+  - You can also use it to **see how much of the site you’ve already crawled** (report) or to **continue from where you left off** (resume).
+
+- **`discover_apis.py`**  
+  Some pages on the site load data “live” from the server (e.g. notices, exam info). This script **finds those data sources** (called APIs) and writes a JSON file that tells your bot: “For this topic, call this URL to get fresh data.” So the bot knows when to use saved JSON and when to fetch live data.
+
+### What each type of JSON file holds
+
+- **`sgsits_home_metadata.json`**  
+  Created when you scrape **a single page** (by default the homepage). It’s one file with everything from that page: title, main text, all links, buttons, forms, and when it was scraped. Good for trying out the scraper or keeping one page’s data.
+
+- **`scraped_data/pages/*.json`**  
+  When you **crawl the site**, each page gets its own file here (e.g. `vision-mission-and-function.json`). Same kind of data as above: text, links, buttons, forms, etc. If you crawl PDFs too, the script pulls out the PDF text and stores it in the same format so the bot can use it.
+
+- **`scraped_data/crawl_index.json`**  
+  A **list of all pages you’ve crawled**: their URLs and titles. The scraper uses it to “resume” (skip pages already done) and to show you a coverage report (which links from the site are still missing from your crawl).
+
+- **`scraped_data/api_discovery.json`**  
+  Created by `discover_apis.py`. For each important page it checked, it records whether the page uses **live data** (APIs) or **fixed content**, and which API URLs to call. Your bot can use this file to decide: “Answer from saved JSON” vs “Fetch from this URL for up-to-date info.”
+
+---
+
 ## Setup
 
 ```bash
